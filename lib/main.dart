@@ -14,7 +14,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Hello Flutter Dev'),
         ),
-        body: Center(child: const Text('Hello World')),
+        body: Center(
+            child: Container(
+                color: Colors.cyanAccent,
+                width: 150,
+                height: 50,
+                child: const Text(
+                  'Hello World',
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.w500),
+                  textAlign: TextAlign.center,
+                ))),
       ),
     );
   }
