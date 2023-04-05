@@ -11,21 +11,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hello Flutter Dev'),
-        ),
-        body: Center(
-            child: Container(
-                color: Colors.cyanAccent,
-                width: 150,
-                height: 50,
-                child: const Text(
-                  'Hello World',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.w500),
-                  textAlign: TextAlign.center,
-                ))),
-      ),
+          appBar: AppBar(
+            title: const Text('Hello Flutter Dev'),
+          ),
+          body: Row(
+            children: [
+              Container(
+                color: Colors.indigo,
+                width: 100,
+                height: 100,
+              ),
+              Container(
+                color: Colors.indigo,
+                width: 100,
+                height: 100,
+              ),
+            ],
+          )),
     );
   }
 }
