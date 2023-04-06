@@ -26,6 +26,16 @@ class MyApp extends StatelessWidget {
                 width: 100,
                 height: 100,
               ),
+              Text(
+                'Testing Fonts',
+                style: TextStyle(
+                    fontFamily: 'ProductSans',
+                    fontSize: 30,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.blue,
+                    decorationStyle: TextDecorationStyle.solid,
+                    decorationThickness: 3),
+              )
             ],
           )),
     );
